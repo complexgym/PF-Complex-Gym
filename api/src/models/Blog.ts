@@ -6,7 +6,11 @@ module.exports = (sequelize) => {
             type: DataTypes.INTEGER,
             allowNull: false,
         },
-        description: {
+        title: {
+            type: DataTypes.STRING,
+            allowNull: false,
+        }, 
+        content: {
             type: DataTypes.TEXT,
             allowNull: false,
         }, 
@@ -14,5 +18,5 @@ module.exports = (sequelize) => {
             type: DataTypes.TEXT,
             allowNull: false,
         },
-     }, {timestamps: false})
-}
+     })
+};
