@@ -28,6 +28,9 @@ module.exports = {
           '.lighter-blue': {
               color: "var(--lighter-blue)",
               fontWeight: "bold"
+          },
+          '.testimonials': {
+            backgroundColor: "var(--bg-testimonials)"
           }
         })
     })
