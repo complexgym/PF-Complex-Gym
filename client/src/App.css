@@ -1,6 +1,13 @@
 :root {
-    --primary-color: red;
-    --secondary-color: blue;
+    --nav-footer: #231F20;
+    --marine-blue: #041C2D;
+    --marine-dark-blue: rgb(7, 7, 10, 0.5);
+    --darker-blue: #1D459D;
+    --lighter-blue: #4A78AD;
 }
 
-/* * * * * * * /
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}

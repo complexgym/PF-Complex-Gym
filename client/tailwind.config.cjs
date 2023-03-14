@@ -12,26 +12,23 @@ module.exports = {
         addComponents({
           //*** buttons ***
           '.btn': {
-            padding: '3px 12px',
-            border: '1px solid black',
-            borderRadius: '50%',
+              padding: '3px 12px',
+              border: '1px solid black',
+              borderRadius: '50%',
           },
           '.btn-red': {
-            backgroundColor: "var(--primary-color)", /* red */
-            color: "white"
+              backgroundColor: "var(--primary-color)", /* red */
+              color: "white"
           },
-          '.btn-red:hover': {
-            backgroundColor: "#f3cbcb",
-            color: "white"
+          '.nav-footer': {
+              backgroundColor: "var(--nav-footer)", /* red */
+              color: "white",
+              opacity: 0.9
           },
-          '.btn-blue': {
-            backgroundColor: "var(--secondary-color)", /* blue */
-            color: "white"
-          },
-          '.btn-blue:hover': {
-            backgroundColor: "#c5c5e1",
-            color: "black"
-          },
+          '.lighter-blue': {
+              color: "var(--lighter-blue)",
+              fontWeight: "bold"
+          }
         })
     })
   ]
