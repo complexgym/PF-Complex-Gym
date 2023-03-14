@@ -13,8 +13,8 @@ function App() {
 				<Route path={''} element={''}></Route>
 				<Route path={''} element={''}></Route>
 			</Routes>
+      <Footer/>
 		</div>
 	);
 }
-
 export default App;
