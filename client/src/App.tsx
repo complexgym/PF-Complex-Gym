@@ -1,21 +1,20 @@
-import { Route, Routes } from 'react-router-dom'
-import './App.css'
-import Footer from './components/Footer/Footer'
-import Testimonials from './components/Testimonials/Testimonials'
+import { useState } from 'react';
+import { Route, Routes } from 'react-router-dom';
+import './App.css';
+import Home from './components/Home/Home';
 
 function App() {
-  return (
-    <div className="App">
-      <Routes>
-        <Route path={""} element={""}></Route>
-        <Route path={""} element={""}></Route>
-        <Route path={""} element={""}></Route>
-        <Route path={""} element={""}></Route>
-      </Routes>
-      {/* <Testimonials/> */}
+	return (
+		<div className='App mt-2 ml-2'>
+			<h1>Complex gym</h1>
+			<Routes>
+				<Route path={''} element={''}></Route>
+				<Route path={'/home'} element={<Home />}></Route>
+				<Route path={''} element={''}></Route>
+				<Route path={''} element={''}></Route>
+			</Routes>
       <Footer/>
-    </div>
-  )
+		</div>
+	);
 }
-
-export default App
+export default App;
