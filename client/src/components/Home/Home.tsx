@@ -1,3 +1,4 @@
+
 import image from '../../assets/image/demoFigma1.jpg';
 import Carrousel from '../Carrousel/Carrousel'
 import Testimonials from '../Testimonials/Testimonials';
@@ -20,5 +21,5 @@ export default function Home() {
 			<Carrousel />
 			<Testimonials/>
 		</div>
-	);
+
 }
