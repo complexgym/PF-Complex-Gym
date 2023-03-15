@@ -5,6 +5,14 @@ import App from './App';
 import './index.css';
 import { Auth0Provider } from '@auth0/auth0-react';
 
+window.addEventListener('blur', () => {
+	document.title = '¡No te vayas gordito! 🏋🏼‍♂️';
+});
+
+window.addEventListener('focus', () => {
+	document.title = 'COMPLEX GYM';
+});
+
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
 	<React.StrictMode>
 		<BrowserRouter>
