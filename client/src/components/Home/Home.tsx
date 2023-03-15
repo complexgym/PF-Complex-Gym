@@ -8,9 +8,9 @@ export default function Home() {
 		<div>
 
 			<div>
-				<div className='z-20 absolute text-2xl text-white w-1/2 top-1/2 left-1/4'>
-					<h1>Qué es para nosotros? </h1>
-					<p className='text-lg'>
+				<div className='z-20 absolute text-6xl text-white w-1/2 top-1/2 left-36'>
+					<h1 className='mb-10' >Qué es para nosotros? </h1>
+					<p className='text-2xl'>
 						Es un centro de movimiento, especializado en preparación física deportiva,
 						actividad física para la salud y estética. Contamos con valores muy sólidos
 						con respecto a la formación y capacitación interna. No lo vendemos como una
