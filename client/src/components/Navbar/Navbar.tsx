@@ -6,9 +6,9 @@ import LoginBtn from '../LoginBtn/LoginBtn';
 export default function Navbar() {
 	const { logout } = useAuth0();
 
-	const { user, isAuthenticated, isLoading } = useAuth0();
+	const { user, isAuthenticated } = useAuth0();
 
-	console.log(user);
+	// console.log(user);
 
 	return (
 		<div className='fixed z-30 flex flex-row  w-full h-20 bg-black bg-opacity-90 justify-between '>
