@@ -1,4 +1,11 @@
 import { Router } from "express"
+import deleteClient from "../controllers/clients/deleteClient"
+import getAllClients from "../controllers/clients/getAllClients"
+import getClientById from "../controllers/clients/getClientById"
+import getClientByName from "../controllers/clients/getClientByName"
+import postClient from "../controllers/clients/postClient"
+import updateClientById from "../controllers/clients/updateClientById"
+
 const router = Router()
 
 /*
