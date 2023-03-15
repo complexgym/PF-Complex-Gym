@@ -1,5 +1,5 @@
 import image from '../../assets/image/demoFigma1.jpg';
-import Carrousel from '../Carrousel/Carrousel'
+import Carrousel from '../Carrousel/Carrousel';
 import Testimonials from '../Testimonials/Testimonials';
 
 
@@ -20,8 +20,7 @@ export default function Home() {
 				<img src={image} alt='' className='relative z-10 w-full' />
 			</div>
 			<Carrousel />
-			<Testimonials/>
+			<Testimonials />
 		</div>
-
   )
 }
