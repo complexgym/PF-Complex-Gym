@@ -60,6 +60,14 @@ const clients = (sequelize) => {
             type: DataTypes.BOOLEAN,
             allowNull: false,
         },
+        debtAmount: {
+            type: DataTypes.INTEGER,
+            allowNull: false,
+        },
+        routine: {
+            type: DataTypes.STRING,
+            allowNull: false,
+        },
 
 
     }, {timestamps: false})

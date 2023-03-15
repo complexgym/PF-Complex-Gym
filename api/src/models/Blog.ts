@@ -6,7 +6,11 @@ const publication = (sequelize) => {
             type: DataTypes.INTEGER,
             allowNull: false,
         },
-        description: {
+        title: {
+            type: DataTypes.STRING,
+            allowNull: false,
+        }, 
+        content: {
             type: DataTypes.TEXT,
             allowNull: false,
         }, 
@@ -14,7 +18,9 @@ const publication = (sequelize) => {
             type: DataTypes.TEXT,
             allowNull: false,
         },
+
      }, {timestamps: false})
 }
 
 export default publication
+
