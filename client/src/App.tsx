@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { Route, Routes, useLocation } from 'react-router-dom';
 import './App.css';
 import Error404 from './components/Error404/Error404';
@@ -8,7 +7,8 @@ import Navbar from './components/Navbar/Navbar';
 
 
 function App() {
-	const location = useLocation();
+
+	const location = useLocation()
 
 	return (
 		<div className='App'>
@@ -20,7 +20,8 @@ function App() {
 				<Route path={''} element={''}></Route>
 				<Route path={'*'} element={<Error404/>}></Route>
 			</Routes>
-			<Footer />
+      {location.pathname!=="/" && <Footer/>}
+
 		</div>
 	);
 }
