@@ -1,10 +1,9 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../../assets/logo/logo.png';
 
 export default function Navbar() {
 	return (
-		<div className='flex flex-row  w-full h-20 bg-black '>
+		<div className='fixed z-30 flex flex-row  w-full h-20 bg-black '>
 			<img className=' h-22 ml-40  ' src={logo} alt='' />
 			<div className=' flex flex-row text-white'>
 				<Link to='/home'>Inicio</Link>
@@ -23,9 +22,17 @@ export default function Navbar() {
 
 				<Link to='/contacto'>Contacto</Link>
 
-				<Link to='/perfil'>Perfil</Link>
-
-				<Link to='/login'>Log In</Link>
+				<ul>
+					<li>
+						<Link to=''>Log In</Link>
+					</li>
+					<li>
+						<Link to='/perfil'>Perfil</Link>
+					</li>
+					<li>
+						<Link to=''>Log Out</Link>
+					</li>
+				</ul>
 			</div>
 		</div>
 	);
