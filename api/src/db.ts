@@ -5,7 +5,7 @@ dotenv.config()
 // MODELS
 import Activities from './models/Activities'
 import Admin from './models/Admin'
-import Publication from './models/Publication'
+import Publication from './models/Blog'
 import Client from './models/Client'
 import Payments from './models/Payments'
 import Trainer from './models/Trainer'
