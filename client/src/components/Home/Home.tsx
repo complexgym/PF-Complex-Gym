@@ -1,14 +1,5 @@
-import image from "../../assets/image/demoFigma1.jpg"
 import Carrousel from '../Carrousel/Carrousel';
 
-export default function Home(){
-    return(
-        <div>
-            
-            
-        </div>
-    )
-}
 
 export default function Home() {
 	return (
@@ -20,7 +11,7 @@ export default function Home() {
                                        Contamos con valores muy sólidos con respecto a la formación y capacitación interna.
                                        No lo vendemos como una receta mágica, valoramos mucho la disciplina, constancia y dedicación</p>
               </div>
-              <img src={image} alt='' className="relative z-10" />
+              <img src="https://res.cloudinary.com/dpxucxgwg/image/upload/v1678822750/demoFigma1_ckzzli.jpg" alt='' className="relative z-10" />
       </div>
       <Carrousel />
     </div>
