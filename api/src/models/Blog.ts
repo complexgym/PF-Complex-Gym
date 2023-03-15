@@ -1,7 +1,7 @@
 import { DataTypes } from "sequelize";
 
-module.exports = (sequelize) => {
-    sequelize.define('blog', {   
+const publication = (sequelize) => {
+    sequelize.define('publication', {   
         authorId: {
             type: DataTypes.INTEGER,
             allowNull: false,
@@ -18,5 +18,9 @@ module.exports = (sequelize) => {
             type: DataTypes.TEXT,
             allowNull: false,
         },
-     })
-};
+
+     }, {timestamps: false})
+}
+
+export default publication
+

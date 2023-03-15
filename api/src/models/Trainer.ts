@@ -1,7 +1,13 @@
 import { DataTypes } from "sequelize";
 
-module.exports = (sequelize) => {
+const trainer = (sequelize) => {
     sequelize.define('trainer', {
+        id: {
+            type: DataTypes.UUID,
+            defaultValue:DataTypes.UUID,
+            allowNull: false,
+            primaryKey: true,
+        },
         user: {
             type: DataTypes.STRING,
             allowNull: false,
@@ -19,11 +25,11 @@ module.exports = (sequelize) => {
             allowNull: false,
         },
         permits: {
-            type: DataTypes.ARRAY,
+            type: DataTypes.ARRAY(DataTypes.STRING),
             allowNull: false,
         },
         classes:  {
-            type: DataTypes.ARRAY,
+            type: DataTypes.ARRAY(DataTypes.STRING),
             allowNull: false,
         },
         phone: {
@@ -40,3 +46,5 @@ module.exports = (sequelize) => {
         },
     }, {timestamps: false})
 }
+
+export default trainer
