@@ -2,10 +2,9 @@ import { Link } from 'react-router-dom';
 import logo from '../../assets/logo/logo.png';
 import { useAuth0 } from '@auth0/auth0-react';
 import LoginBtn from '../LoginBtn/LoginBtn';
+import LogoutBtn from '../LogoutBtn/LogoutBtn';
 
 export default function Navbar() {
-	const { logout } = useAuth0();
-
 	const { user, isAuthenticated } = useAuth0();
 
 	// console.log(user);
@@ -42,13 +41,7 @@ export default function Navbar() {
 								<Link to='/perfil'>Perfil</Link>
 							</li>
 							<li>
-								<button
-									onClick={() =>
-										logout({ logoutParams: { returnTo: window.location.origin } })
-									}
-								>
-									Log out
-								</button>
+								<LogoutBtn />
 							</li>
 						</ul>
 					</div>
