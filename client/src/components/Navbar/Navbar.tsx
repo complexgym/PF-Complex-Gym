@@ -27,7 +27,7 @@ export default function Navbar() {
 				</ul>
 				<Link to='/planes'>Planes</Link>
 
-				<LoginBtn />
+				{!isAuthenticated && <LoginBtn />}
 
 				{isAuthenticated && (
 					<div>
