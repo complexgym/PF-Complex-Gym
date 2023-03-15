@@ -5,9 +5,7 @@ import Footer from './components/Footer/Footer';
 import Home from './components/Home/Home';
 import Navbar from './components/Navbar/Navbar';
 
-
 function App() {
-
 	const location = useLocation()
 
 	return (
@@ -19,8 +17,9 @@ function App() {
 				<Route path={''} element={''}></Route>
 				<Route path={''} element={''}></Route>
 				<Route path={'*'} element={<Error404/>}></Route>
-			</Routes>
-      {location.pathname!=="/" && <Footer/>}
+			</Routes>	
+
+      		{location.pathname!=="/" && <Footer/>}
 
 		</div>
 	);
