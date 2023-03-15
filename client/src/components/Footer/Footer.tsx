@@ -4,7 +4,7 @@ import location from "../../assets/footer/location.png"
 import email from "../../assets/footer/email.png"
 import phone from "../../assets/footer/phone.png"
 import time from "../../assets/footer/time.png"
-import { Link } from "react-router-dom"
+
 
 export default function Footer(){
     const openWpp = ()=>{
