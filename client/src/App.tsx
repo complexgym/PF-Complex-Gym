@@ -1,10 +1,10 @@
-import { useState } from 'react';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, useLocation } from 'react-router-dom';
 import './App.css';
 import Footer from './components/Footer/Footer';
 import Home from './components/Home/Home';
 
 function App() {
+	const location = useLocation()
 	return (
 		<div className='App'>
 			<Routes>
@@ -13,7 +13,7 @@ function App() {
 				<Route path={''} element={''}></Route>
 				<Route path={''} element={''}></Route>
 			</Routes>
-      	<Footer/>
+      	{location.pathname!=="/" && <Footer/>}
 		</div>
 	);
 }

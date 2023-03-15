@@ -20,6 +20,8 @@ module.exports = {
               backgroundColor: "var(--primary-color)", /* red */
               color: "white"
           },
+          
+          //*backgrounds
           '.nav-footer': {
               backgroundColor: "var(--nav-footer)", /* red */
               color: "white",
@@ -32,10 +34,17 @@ module.exports = {
               color: "var(--lighter-blue)",
               fontWeight: "bold"
           },
-          '.testimonials': {
-            backgroundColor: "var(--bg-testimonials)",
-            padding: "10px"
+          '.bg-testimonials': {
+            backgroundColor: "var(--bg-testimonials)"
           },
+          '.bg-card-testimonials': {
+            backgroundColor: "#0c2d44"
+          },
+          '.border-gold': {
+            borderColor: "#aaa876"
+          },
+
+          //*buttons
           '.btn-home': {
             color: "var(--lighter-blue)",
             borderBottom: "3px solid var(--lighter-blue)",
