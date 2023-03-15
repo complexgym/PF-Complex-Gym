@@ -1,6 +1,6 @@
 import { DataTypes } from "sequelize";
 
-module.exports = (sequelize) => {
+const activities = (sequelize) => {
     sequelize.define('activities', {   
 
         name: {
@@ -12,11 +12,11 @@ module.exports = (sequelize) => {
             allowNull: false,
         }, 
         days: {
-            type: DataTypes.ARRAY,
+            type: DataTypes.ARRAY(DataTypes.STRING),
             allowNull: false,
         },
         schedule: {
-            type: DataTypes.ARRAY,
+            type: DataTypes.ARRAY(DataTypes.STRING),
             allowNull: false,
         },
         trainerId: {
@@ -30,3 +30,5 @@ module.exports = (sequelize) => {
 
      }, {timestamps: false})
 }
+
+export default activities

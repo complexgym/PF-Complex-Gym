@@ -1,7 +1,13 @@
 import { DataTypes } from "sequelize";
 
-module.exports = (sequelize) => {
+const clients = (sequelize) => {
     sequelize.define('client', {
+        id: {
+            type: DataTypes.UUID,
+            defaultValue:DataTypes.UUID,
+            allowNull: false,
+            primaryKey: true,
+        },
         user: {
             type: DataTypes.STRING,
             allowNull: false,
@@ -54,7 +60,17 @@ module.exports = (sequelize) => {
             type: DataTypes.BOOLEAN,
             allowNull: false,
         },
+        debtAmount: {
+            type: DataTypes.INTEGER,
+            allowNull: false,
+        },
+        routine: {
+            type: DataTypes.STRING,
+            allowNull: false,
+        },
 
 
     }, {timestamps: false})
 }
+
+export default clients
