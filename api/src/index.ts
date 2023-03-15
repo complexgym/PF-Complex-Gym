@@ -17,3 +17,14 @@
 //     =====`-.____`.___ \_____/___.-`___.-'=====
 //                       `=---='
 //     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+import app from "./app";
+import dotenv from 'dotenv'
+import {db} from './db'
+
+dotenv.config()
+
+db.sync({ force: true }).then(() => {
+    app.listen(process.env.PORT, () => {
+      console.log('%s listening at', process.env.PORT); 
+    });
+});

@@ -1,7 +1,9 @@
 import { DataTypes } from "sequelize";
 
-module.exports = (sequelize) => {
+const payments = (sequelize) => {
     sequelize.define('payments', {   
         
      }, {timestamps: false})
 }
+
+export default payments
