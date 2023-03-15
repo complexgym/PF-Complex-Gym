@@ -21,7 +21,7 @@ PUT - update client for id
 */
 
 router.get('/', (req, res)=>{
-    res.json({message: 'hola mundo'})
+    res.json({message: 'hola mundo 3'})
 }) // all clients and find by name
 router.get('/:id', (req, res)=>{})
 
