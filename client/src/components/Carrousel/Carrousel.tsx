@@ -56,21 +56,21 @@ export default function Carrousel() {
 					className='w-full h-full rounded-2xl bg-center bg-cover duration-500'
 				></div>
 				{/*Left Arrow*/}
-				<div className='absolute top-[50%] -translate-x-0 translate-y-[50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer '>
-					<BsChevronCompactLeft onClick={prevSlide} size={30} />
+				<div className='absolute top-[50%] -translate-x-0 translate-y-0 left-10 text-2xl rounded-full p-3 bg-black/30 text-white cursor-pointer '>
+					<BsChevronCompactLeft onClick={prevSlide} size={40} />
 				</div>
 				{/*Right Arrow*/}
-				<div className='absolute top-[50%] -translate-x-0 translate-y-[50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer '>
-					<BsChevronCompactRight onClick={nextSlide} size={30} />
+				<div className='absolute top-[50%] -translate-x-0 translate-y-0 right-10 text-2xl rounded-full p-3 bg-black/30 text-white cursor-pointer '>
+					<BsChevronCompactRight onClick={nextSlide} size={40} />
 				</div>
-				<div className='flex top-4 justify-center py-2'>
+				<div className='flex top-4 justify-center py-4'>
 					{slides.map((slide, slideIndex) => (
 						<div
 							key={slideIndex}
 							onClick={() => goToSlide(slideIndex)}
-							className='text-wxl cursor-pointer'
+							className='text-wxl cursor-pointer text-white/60 hover:scale-150'
 						>
-							<RxDotFilled />
+							<RxDotFilled size={30} />
 						</div>
 					))}
 				</div>
