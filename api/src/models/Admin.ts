@@ -1,7 +1,13 @@
 import { DataTypes } from "sequelize";
 
-module.exports = (sequelize) => {
+const admin = (sequelize) => {
     sequelize.define('admin', {
+        id: {
+            type: DataTypes.UUID,
+            defaultValue:DataTypes.UUID,
+            allowNull: false,
+            primaryKey: true,
+        },
         user: {
             type: DataTypes.STRING,
             allowNull: false,
@@ -19,8 +25,10 @@ module.exports = (sequelize) => {
             allowNull: false,
         },
         permits: {
-            type: DataTypes.ARRAY,
+            type: DataTypes.ARRAY(DataTypes.STRING),
             allowNull: false,
         }
     }, {timestamps: false})
 }
+
+export default admin

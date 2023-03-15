@@ -18,7 +18,13 @@
 //                       `=---='
 //     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 import app from "./app";
-app.listen(3000, ()=>console.log('back in port 3000'))
-/*
-npm i ts-node-dev -D
-*/
+import dotenv from 'dotenv'
+import {db} from './db'
+
+dotenv.config()
+
+db.sync({ force: true }).then(() => {
+    app.listen(process.env.PORT, () => {
+      console.log('%s listening at', process.env.PORT); 
+    });
+});
