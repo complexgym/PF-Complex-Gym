@@ -1,4 +1,3 @@
-import { json } from "body-parser";
 import { Request, Response } from "express";
 import { models } from "../../db";
 
@@ -6,7 +5,6 @@ import { models } from "../../db";
 const getActivitiesById = async (req: Request, res: Response) => {
   try {
     const { id } = req.params;
-    console.log(id)
     const activity = await models.activities.findAll({
         where: {id}
     });
