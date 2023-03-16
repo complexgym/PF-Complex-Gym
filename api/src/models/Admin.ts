@@ -16,10 +16,6 @@ const admin = (sequelize) => {
             type: DataTypes.STRING,
             allowNull: false,
         },
-        password: {
-            type: DataTypes.STRING,
-            allowNull: false,
-        },
         avatar: {
             type: DataTypes.TEXT,
             allowNull: false,

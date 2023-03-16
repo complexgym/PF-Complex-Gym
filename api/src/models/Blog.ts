@@ -18,7 +18,10 @@ const publication = (sequelize) => {
             type: DataTypes.TEXT,
             allowNull: false,
         },
-
+        tag: {
+            type: DataTypes.ARRAY(DataTypes.STRING),
+            default: ["fitness"]
+        }
      }, {timestamps: false})
 }
 
