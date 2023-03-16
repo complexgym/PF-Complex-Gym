@@ -1,10 +1,9 @@
-import wpp from "../../assets/footer/whatsapp.png" 
 import ig from "../../assets/footer/instagram.png" 
 import location from "../../assets/footer/location.png"
 import email from "../../assets/footer/email.png"
 import phone from "../../assets/footer/phone.png"
 import time from "../../assets/footer/time.png"
-import { Link } from "react-router-dom"
+
 
 export default function Footer(){
     const openWpp = ()=>{
@@ -64,11 +63,6 @@ export default function Footer(){
                 <div className="flex">
                     <div>
                         <p>Síguenos:</p>
-                    </div>
-
-                    <div className="ml-4">
-                        <img className="w-8 cursor-pointer" src={wpp} alt="whatsapp"
-                        onClick={openWpp}/>
                     </div>
 
                     <div className="ml-2">

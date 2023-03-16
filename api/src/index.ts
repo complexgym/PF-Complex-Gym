@@ -23,7 +23,7 @@ import {db} from './db'
 
 dotenv.config()
 
-db.sync({ force: true }).then(() => {
+db.sync({ force: false }).then(() => {
     app.listen(process.env.PORT, () => {
       console.log('%s listening at', process.env.PORT); 
     });

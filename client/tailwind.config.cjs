@@ -20,22 +20,58 @@ module.exports = {
               backgroundColor: "var(--primary-color)", /* red */
               color: "white"
           },
+          
+          //*backgrounds
           '.nav-footer': {
               backgroundColor: "var(--nav-footer)", /* red */
               color: "white",
               opacity: 0.9
           },
+          '.bg-loaging': {               
+            backgroundColor: 'var(--bg-loaging)', 
+          },
           '.bg-carrousel': {
             backgroundColor: "var(--marine-blue)"
           },
+          '.bg-testimonials': {
+            backgroundColor: "var(--bg-testimonials)",
+            height: "fit-content(100vh)",
+            objectFit: "cover",
+            minHeight: "fit-content"
+          },
+          '.bg-card-testimonials': {
+            backgroundColor: "#0c2d44"
+          },
+          '.bg-lighter-blue': {
+            backgroundColor: "#2563eb"
+          },
+          '.bg-image-testimonies': {
+            backgroundImage: "url('https://res.cloudinary.com/dpxucxgwg/image/upload/v1678908756/bg-testimonios_zr761n.png')",
+            width: "100%",
+            backgroundSize: "cover"
+          },
+          '.bg-image-carrousel': {
+            backgroundImage: "url('https://res.cloudinary.com/dpxucxgwg/image/upload/v1678917982/bg-carrousel_fk0my1.png')",
+            width: "100%",
+            minHeight: "100vh",
+            backgroundSize: "cover"
+          },
+
+          //*fonts
           '.lighter-blue': {
               color: "var(--lighter-blue)",
               fontWeight: "bold"
           },
-          '.testimonials': {
-            backgroundColor: "var(--bg-testimonials)",
-            padding: "10px"
+
+          //*borders
+          '.border-gold': {
+            borderColor: "#aaa876"
           },
+          '.border-blue': {
+            borderColor: "var(--lighter-blue)"
+          },
+
+          //*buttons
           '.btn-home': {
             color: "var(--lighter-blue)",
             borderBottom: "3px solid var(--lighter-blue)",
@@ -55,3 +91,6 @@ module.exports = {
     })
   ]
 }
+
+
+// https://res.cloudinary.com/dpxucxgwg/image/upload/v1678917982/bg-carrousel_fk0my1.png
