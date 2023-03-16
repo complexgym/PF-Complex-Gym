@@ -1,7 +1,9 @@
+import Form from '../Form/Form';
+
 export default function Profile() {
 	return (
 		<div>
-			<div></div>
+			<Form />
 		</div>
 	);
 }
