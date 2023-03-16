@@ -12,4 +12,10 @@ router.get("/name", getActivitiesByName);
 
 router.get("/:id", getActivitiesById);
 
-export default router
+router.post("/");
+
+router.put("/");
+
+router.delete("/");
+
+export default router;
