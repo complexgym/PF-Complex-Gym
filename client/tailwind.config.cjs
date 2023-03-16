@@ -27,6 +27,9 @@ module.exports = {
               color: "white",
               opacity: 0.9
           },
+          '.bg-loaging': {               
+            backgroundColor: 'var(--bg-loaging)', 
+          },
           '.bg-carrousel': {
             backgroundColor: "var(--marine-blue)"
           },
