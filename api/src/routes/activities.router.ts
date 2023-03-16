@@ -8,8 +8,8 @@ const router = Router()
 
 router.get("/", getAllActivities);
   
-router.get('/:name', getActivitiesByName);
+router.get("/name", getActivitiesByName);
 
-router.get('/activities/:id', getActivitiesById);
+router.get("/:id", getActivitiesById);
 
 export default router
