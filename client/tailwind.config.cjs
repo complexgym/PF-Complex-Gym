@@ -20,6 +20,11 @@ module.exports = {
               backgroundColor: "var(--primary-color)", /* red */
               color: "white"
           },
+
+          //*fonts
+          '.font-light-blue': {
+            color: "#4ab4ab"
+          },
           
           //*backgrounds
           '.nav-footer': {
@@ -37,21 +42,39 @@ module.exports = {
             minHeight: "fit-content"
           },
           '.bg-card-testimonials': {
-            backgroundColor: "#0c2d44"
+            backgroundColor: "#112332"
           },
           '.bg-lighter-blue': {
             backgroundColor: "#2563eb"
           },
-          '.bg-image-testimonies': {
+          '.bg-image-testimonials': {
             backgroundImage: "url('https://res.cloudinary.com/dpxucxgwg/image/upload/v1678908756/bg-testimonios_zr761n.png')",
             width: "100%",
             backgroundSize: "cover"
+          },
+          '.bg-image-plans': {
+            backgroundImage: "url('https://res.cloudinary.com/dpxucxgwg/image/upload/v1678917982/bg-carrousel_fk0my1.png')",
+            width: "100%",
+            backgroundSize: "cover",
+            minHeight: "80vh"
           },
           '.bg-image-carrousel': {
             backgroundImage: "url('https://res.cloudinary.com/dpxucxgwg/image/upload/v1678917982/bg-carrousel_fk0my1.png')",
             width: "100%",
             minHeight: "100vh",
             backgroundSize: "cover"
+          },
+          '.bg-card-plans': {
+            backgroundImage: "url('https://forestfitnessgym.com/wp-content/uploads/2022/10/mt-1373-blog-img02.jpeg')",
+            width: "100%",
+            backgroundSize: "cover"
+          },
+          '.bg-card-image-plans': {
+            backgroundColor: "#031728"
+          },
+          'bg-center': {
+            backgroundSize: "cover",
+            backgroundPosition: "center"
           },
 
           //*fonts

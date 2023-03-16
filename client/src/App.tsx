@@ -4,6 +4,7 @@ import Error404 from './components/Error404/Error404';
 import Footer from './components/Footer/Footer';
 import Home from './components/Home/Home';
 import Navbar from './components/Navbar/Navbar';
+import Plans from './components/Plans/Plans';
 
 function App() {
 	const location = useLocation()
@@ -15,6 +16,7 @@ function App() {
 			<Routes>
 				<Route path={''} element={''}></Route>
 				<Route path={'/home'} element={<Home />}></Route>
+				<Route path={'/planes'} element={<Plans/>}></Route>
 				<Route path={''} element={''}></Route>
 				<Route path={''} element={''}></Route>
 				<Route path={'*'} element={<Error404 />}></Route>

@@ -10,18 +10,32 @@ export default function Home() {
 
 	return (
 		<div>
-
 			<div>
-				<div className='z-20 absolute text-6xl text-white w-1/2 top-1/2 left-36'>
-					<h1 className='mb-10' >Qué es para nosotros? </h1>
-					<p className='text-2xl'>
+				{/* desktop */}
+				<div className='z-20 absolute text-6xl hidden 2xl:block  text-white w-1/2 top-1/2 left-36'>
+					<h1 className='mb-10 text-5xl' >¿Qué es para nosotros? </h1>
+					<p className='text-xl'>
 						Es un centro de movimiento, especializado en preparación física deportiva,
 						actividad física para la salud y estética. Contamos con valores muy sólidos
 						con respecto a la formación y capacitación interna. No lo vendemos como una
 						receta mágica, valoramos mucho la disciplina, constancia y dedicación
 					</p>
 				</div>
-				<img src={image} alt='' className='relative z-10 w-full' />
+
+				<img src={image} alt='' className='relative z-10 w-full pt-20 xl:pt-0' />
+				
+				{/* mobile */}
+				<div className='z-20 text-6xl block 2xl:hidden text-white bg-carrousel'>
+					<div className="w-10/12 mx-auto pt-8">
+						<h1 className='mb-10 text-3xl' >¿Qué es para nosotros? </h1>
+						<p className='text-lg'>
+							Es un centro de movimiento, especializado en preparación física deportiva,
+							actividad física para la salud y estética. Contamos con valores muy sólidos
+							con respecto a la formación y capacitación interna. No lo vendemos como una
+							receta mágica, valoramos mucho la disciplina, constancia y dedicación
+						</p>
+					</div>
+				</div>
 			</div>
 
 			<Carrousel />
