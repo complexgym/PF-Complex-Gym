@@ -1,10 +1,6 @@
 import { Router } from "express"
-import deleteClient from "../controllers/clients/deleteClient"
-import getAllClients from "../controllers/clients/getAllClients"
-import getClientById from "../controllers/clients/getClientById"
-import getClientByName from "../controllers/clients/getClientByName"
-import postClient from "../controllers/clients/postClient"
-import updateClientById from "../controllers/clients/updateClientById"
+
+import { getClientByName, updateClientById } from "../controllers/index"
 
 const router = Router()
 
@@ -20,15 +16,50 @@ DELETE - deactivate client for id
 PUT - update client for id
 */
 
-router.get('/', (req, res)=>{
-    res.json({message: 'hola mundo 3'})
+// TEST DATA
+import { testData } from "../datatest/addClients.test"
+import { clientInterface } from "../interfaces"
+
+router.get('/', async (req, res) => {
+    const { name } = req.query
+
+    // FIND BY NAME CASE
+    if (name && typeof name === 'string') {
+        const response = await getClientByName(name)
+        return res.json({
+            message: 'find by name',
+            response
+        })
+    }
+    testData()
+    res.json({
+        message: 'find all clients'
+    })
 }) // all clients and find by name
-router.get('/:id', (req, res)=>{})
 
-router.post('/', (req, res)=>{})
+router.get('/:id', (req, res) => { })
 
-router.delete('/:id', (req, res)=>{})
+router.post('/', (req, res) => { })
 
-router.put('/:id', (req, res)=>{})
+router.delete('/:id', (req, res) => { })
+
+router.put('/:id', async (req, res) => {
+    const { id } = req.params
+    const data : clientInterface = req.body
+
+    try {
+        const response = await updateClientById(id, data)
+
+        return res.json({
+            message: 'ruta update funca1',
+            response
+        })
+    } catch (error: any) {
+        return res.json({
+            message: 'algo salio mal',
+            error: error.message
+        })
+    }
+})
 
 export default router

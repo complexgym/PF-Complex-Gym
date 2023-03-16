@@ -1,4 +1,4 @@
-export interface client {
+export interface clientInterface {
     id: string,
     user: string,
     password: string,
