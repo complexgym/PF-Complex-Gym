@@ -6,9 +6,9 @@ import Testimonials from '../Testimonials/Testimonials';
 export default function Home() {
 	return (
 		<div>
-
-			<div>
-				<div className='z-20 absolute text-6xl text-white w-1/2 top-1/2 left-36'>
+			<img src={image} alt='' className='relative w-full' />
+			
+				<div className='absolute text-6xl text-white w-1/2 top-1/2 left-36 '>
 					<h1 className='mb-10' >Qué es para nosotros? </h1>
 					<p className='text-2xl'>
 						Es un centro de movimiento, especializado en preparación física deportiva,
@@ -16,8 +16,6 @@ export default function Home() {
 						con respecto a la formación y capacitación interna. No lo vendemos como una
 						receta mágica, valoramos mucho la disciplina, constancia y dedicación
 					</p>
-				</div>
-				<img src={image} alt='' className='relative z-10 w-full' />
 			</div>
 			<Carrousel />
 			<Testimonials />
