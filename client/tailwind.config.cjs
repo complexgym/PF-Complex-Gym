@@ -19,7 +19,24 @@ module.exports = {
 					backgroundColor: 'var(--primary-color)' /* red */,
 					color: 'white',
 				},
-
+  content: ["./src/**/*.{html,js,ts,tsx}"],
+  theme: {
+    extend: {},
+  },
+  plugins: [
+    plugin(function({
+      addComponents }) {
+        addComponents({
+          //*** buttons ***
+          '.btn': {
+              padding: '3px 12px',
+              border: '1px solid black',
+              borderRadius: '50%',
+          },
+          '.btn-red': {
+              backgroundColor: "var(--primary-color)", /* red */
+              color: "white"
+          },
 				//*backgrounds
 				'.nav-footer': {
 					backgroundColor: 'var(--nav-footer)' /* red */,
@@ -93,4 +110,3 @@ module.exports = {
 	],
 };
 
-// https://res.cloudinary.com/dpxucxgwg/image/upload/v1678917982/bg-carrousel_fk0my1.png

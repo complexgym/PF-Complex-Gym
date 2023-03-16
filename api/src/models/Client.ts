@@ -7,6 +7,7 @@ const clients = (sequelize) => {
             defaultValue:DataTypes.UUID,
             allowNull: false,
             primaryKey: true,
+            unique: true
         },
         user: {
             type: DataTypes.STRING,
